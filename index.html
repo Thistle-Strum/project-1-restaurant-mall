@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant Mall</title>
+    <script
+        src="https://kit.fontawesome.com/03dd5f52fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div>
+        <button data-modal="modal-one" class="orderButton">PLACE AN ORDER</button>
+    </div>
+
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-bg modal-exit" aria-hidden="true"></div>
+        <div class="modal-container" aria-hidden="true">
+            <div class="modalForm" aria-hidden="true">
+                <form action="https://formsubmit.co/fuzzycircles@gmail.com" method="POST" />
+                
+                    <fieldset>
+                        <label for="name" aria-hidden="true"></label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="email" aria-hidden="true"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        <label for="instructions" aria-hidden="true"></label>
+                        <textarea name="instructions" id="instructions" name="instructions" placeholder="Special Instructions"  cols="30" rows="10"></textarea> 
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <button>SUBMIT</button>  
+                    </fieldset>                     
+
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                
+                </form>
+            </div>  
+          <button class="modal-close modal-exit">X</button>
+        </div>
+    </div>
+    <header class="indexHeader" id="home">
+            <div class="headerContainer">
+                <div class="wrapper">
+                    <nav class="nav">
+                        <label for="menu" class="menuToggle" aria-hidden="true">
+                            <div class="menuButton">
+                                <div class="menuButtonBurger"></div> 
+                            </div>
+                            <!-- <i class="fas fa-bars"></i> -->
+                        </label>
+                        <input type="checkbox" id="menu" class="menu-checkbox">
+                        
+                        <ul class="headerNavContainer">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <h1>THE<br> <span>RESTAURANT</span><br> MALL</h1>
+                </div>
+                <div class="headerImg"><img
+                        src="./the-restaurant-mall-assets/home-box-header.png"
+                        alt="a plate of salad topped with onion rings">
+                </div>
+            </div>
+       
+        <!-- END header wrapper -->
+    </header>
+    <main>
+        <section id="about">
+            <div class="wrapper">
+                <div class="aboutContainer">
+                    <div class="location">
+                        <a href="" target="_blank" rel="noopener" >
+                        <div class="locationIcon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>  
+                        <h2>LOCATION</h2>
+                        </a>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="community">
+                        <a href="" target="_blank" rel="noopener" >
+                        <div class="communityIcon">
+                            <i class="fas fa-users"></i>
+                        </div>  
+                        <h2>COMMUNITY</h2>
+                        </a>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="blog">
+                        <a href="" target="_blank" rel="noopener" >
+                        <div class="blogIcon">
+                            <i class="fas fa-file"></i>
+                        </div>  
+                        <h2>BLOG</h2>
+                        </a>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="getInTouch">
+                        <a href="" target="_blank" rel="noopener" >
+                        <div class="getInTouchIcon">
+                            <i class="fas fa-phone"></i>
+                        </div>  
+                        <h2>GET IN TOUCH</h2>
+                        </a>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                </div>
+            </div> <!-- END about wrapper -->    
+        </section>
+        <section>
+            <div class="trySomething">
+                <div class="leftImg box">   
+                          
+                    <img class="hamburger" src="./the-restaurant-mall-assets/left-image.jpg" alt="a hamburger and fries on a dinner plate">
+                  </div>
+                <div class="rightText">
+                    <div class="wrapper">
+                        <h3>BEST BURGERS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere ut blanditiis nihil doloremque magnam sapiente illum laborum nobis voluptatibus! Excepturi quisquam</p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+                <div class="leftText">
+                    <div class="wrapper">
+                        <h3>TRY SOMETHING NEW</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere ut blanditiis nihil doloremque magnam sapiente illum laborum nobis voluptatibus! Excepturi quisquam laboriosam saepe</p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+                <div class="rightImg">
+                    <img src="./the-restaurant-mall-assets/right-image.jpg" alt="a large bowel of guacamole">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="winContainer">
+                    <h2>WIN A $100 GIFT CART</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere ut blanditiis nihil doloremque magnam sapiente illum laborum nobis voluptatibus! Excepturi quisquam laboriosam saepe odio similique, inventore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, corrupti. Lorem ipsum dolor sit</p>
+                    <button class="blackButton">FIND OUT MORE</button>
+                </div>
+            </div>
+            <div class="bottomImg">
+                <img src="./the-restaurant-mall-assets/banner.jpg" alt="a cafe with tables and chairs in the foreground, a coffee bar in the background">
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="bringing">
+                    <div class="bringingImg">
+                        <img src="./the-restaurant-mall-assets/square-image.jpg" alt=" a dinning area and bar housed in a green house">
+                    </div>
+                    <div class="bringingText">
+                        <h2>BRINGING NATURE IN SPACES</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit harum quod rem expedita officiis recusandae consectetur repellat qui nihil veritatis magnam repudiandae, ex nostrum! Praesentium itaque illum odit! Voluptatum molestiae laborum animi quisquam doloribus voluptatibus harum corporis alias beatae enim non accusantium, tempora consequuntur nobis minus ex in quaerat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, voluptatem! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </P>
+                        <button class="blackButton">FIND OUT MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>          
+            <div class="gallery">
+                <div><img src="./the-restaurant-mall-assets/gallery-image-1.jpg" alt=""></div>
+                <div><img src="./the-restaurant-mall-assets/gallery-image-2.jpg" alt=""></div>
+                <div><img src="./the-restaurant-mall-assets/gallery-image-3.jpg" alt=""></div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Reacreated at Juno © 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

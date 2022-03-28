@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script
+        src="https://kit.fontawesome.com/03dd5f52fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="blogBody">
+    <div>
+        <button data-modal="modal-one" class="orderButton">PLACE AN ORDER</button>
+    </div>
+
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-bg modal-exit" aria-hidden="true"></div>
+        <div class="modal-container" aria-hidden="true">
+            <div class="modalForm">
+                <form action="https://formsubmit.co/fuzzycircles@gmail.com" method="POST" />
+                
+                    <fieldset>
+                        <label for="name" aria-hidden="true"></label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="email" aria-hidden="true"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        <label for="instructions" aria-hidden="true"></label>
+                        <textarea name="instructions" id="instructions" name="instructions" placeholder="Special Instructions"  cols="30" rows="10"></textarea> 
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <button>SUBMIT</button>  
+                    </fieldset>                     
+
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                
+                </form>
+            </div>  
+          <button class="modal-close modal-exit">X</button>
+        </div>
+    </div>
+    <header id="home" class="blogHeaderContainer">
+        <div class="wrapper">
+            <!-- <div class="headerContainer"> -->
+            <div>
+                <nav class="nav">
+                    <label for="menu" class="menuToggle" aria-hidden="true">
+                        <div class="menuButton">
+                            <div class="menuButtonBurger"></div> 
+                        </div>
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </label>
+                    <input type="checkbox" id="menu" class="menu-checkbox">
+                    <ul class="headerNavContainer">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2>BLOG</h2>
+            </div>
+        </div> <!-- END header wrapper --> 
+    </header>
+    <main>
+        <section>
+            <div class="blogContainer">
+                <div class="asideContainer">
+                    <div class="asideImg">
+                        <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="a plate of food">
+                    </div>
+                    <aside class="featured">
+                        <h4><a href="">FEATURED RESTAURANTS</a></h4>
+                        <P>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.
+                        </P>
+                        <h4>RECENT POSTS</h4>
+                        <ul>
+                            <li><a href="#">Donec facilisis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapien metus</a></li>
+                            <li><a href="#">Scelerisque nec pharetra id</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="employContainer">
+                    <div class="employImg">
+                        <img src="./the-restaurant-mall-assets/blog-post-image.jpg" alt="a waiter setting a table">
+                    </div>
+                    <div class="employText">
+                        <h3>EMPLOYEMENT OPPORTUNITIES</h3>
+                        <h5>Monday October 30, 2019 by Sulaire</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente iste eligendi repudiandae tempore repellat ab hic. Eligendi, similique! Quod, fugiat enim odio, deleniti nisi earum quo, culpa eaque dolores praesentium maxime aliquam id!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptas, accusamus dolorum libero, doloribus veritatis quibusdam est distinctio, optio incidunt cum quod vero ex corrupti ducimus. At sapiente alias tenetur libero ea aliquid labore fugit dolore architecto. Nesciunt harum dolorum maxime eos, eveniet illum facere officiis ad?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatem aliquid numquam. Aliquam, praesentium. Alias optio consequuntur explicabo nihil, accusamus ipsam necessitatibus nisi tempora quos amet voluptates fugit, expedita sunt. Labore tempore nulla temporibus quos molestiae optio unde harum pariatur quis quasi odio quidem, dolores laborum recusandae nemo accusantium omnis nam praesentium. Ducimus, reprehenderit maiores recusandae expedita labore, eum obcaecati animi et consectetur sapiente non iure suscipit!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quibusdam doloribus impedit dolorem rem, sit, illo animi veniam nam, 
+                        quod eaque harum soluta?</p>
+                    </div>
+                    <div class="comments">
+                        <h3>COMMENTS:</h3>
+                        <div class="comment1">
+                            <div class="comment1Img">
+                                <img src="./the-restaurant-mall-assets/comment-1.jpg" alt="the commenter's face">
+                            </div>
+                            <div class="comment1Text">
+                                <h5>Tuesday October 9th, 2019 by Ali</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum molestias est corporis reprehenderit omnis qui adipisci tempore, debitis error! Delectus vel praesentium ad ullam architecto eaque aliquam aliquid. Id recusandae minima</p>
+                            </div>
+                        </div>
+                        <div class="comment2">
+                            <div class="comment1Img">
+                                <img src="./the-restaurant-mall-assets/comment-2.jpg" alt="the commenter's face">
+                            </div>
+                            <div class="comment2Text">
+                                <h5>Wednesday October 10th, 2019 by Lisa</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum molestias est corporis reprehenderit omnis qui adipisci tempore, debitis error! Delectus vel praesentium ad ullam </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="">
+                        <fieldset>
+                            <label for="name" aria-hidden="true"></label>
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <label for="email" aria-hidden="true"></label>
+                            <input type="email" id="email" name="email" placeholder="Email address">
+                            <label for="comment" aria-hidden="true"></label>
+                            <textarea name="comment" id="comment" placeholder="Comment" name="message" cols="30" rows="10"></textarea> 
+                        
+                            <button>POST COMMENT</button> 
+                        </fieldset>        
+                    </form>
+                </div>  
+            </div>     
+        </section>
+    </main>
+    <footer class="blogFooter">
+        <p>Reacreated at Juno © 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

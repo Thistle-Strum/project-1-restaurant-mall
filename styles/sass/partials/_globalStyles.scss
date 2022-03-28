@@ -1,0 +1,19 @@
+body {
+    background-color: $green;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    font-family: $headingFont;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    font-weight: 200;
+    text-align: center;
+    border: none;
+    margin: 33px 0
+}   

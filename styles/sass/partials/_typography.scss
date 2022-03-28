@@ -1,0 +1,103 @@
+/* importing Josefin Sans font */
+@font-face{
+    font-family: "Josefin Sans";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "Josefin Sans";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "Josefin Sans";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "Josefin Sans";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Josefin Sans";
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
+    font-weight: 700;
+}
+
+/* importing Barlow font in bold */
+@font-face{
+    font-family: "Barlow";
+    src: url(../fonts/Barlow/Barlow-Regular.ttf);
+    font-weight: 400;
+}
+
+html{
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $white;
+}
+
+h1, h2, h3, h4 {
+    font-family: $headingFont;
+    color: $white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.46rem;
+    font-weight:400;
+    letter-spacing: 0.06rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+    margin-bottom: 7px;
+}
+
+h4 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 200;
+}
+
+h5 {
+    font-family: $bodyFont;
+    font-size: 0.7rem;
+    letter-spacing: 0.075rem;
+}
+
+p { 
+    font-size: 0.67rem;
+    line-height: 1rem;
+    letter-spacing: 1.2px; 
+}
+// letter-spacing recently changed from 1.3 to 1.2
+ul, li, a, input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

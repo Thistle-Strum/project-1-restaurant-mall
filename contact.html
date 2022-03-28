@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script
+        src="https://kit.fontawesome.com/03dd5f52fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div>
+        <button data-modal="modal-one" class="orderButton" aria-hidden="true">PLACE AN ORDER</button>
+    </div>
+
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-bg modal-exit" aria-hidden="true"></div>
+        <div class="modal-container" aria-hidden="true">
+            <div class="modalForm">
+                <form action="https://formsubmit.co/fuzzycircles@gmail.com" method="POST" />
+                
+                    <fieldset>
+                        <label for="name" aria-hidden="true"></label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="email" aria-hidden="true"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        <label for="instructions" aria-hidden="true"></label>
+                        <textarea name="instructions" id="instructions" name="instructions" placeholder="Special Instructions"  cols="30" rows="10"></textarea> 
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <button>SUBMIT</button>  
+                    </fieldset>                     
+
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                
+                </form>
+            </div>  
+            <button class="modal-close modal-exit">X</button>
+        </div>
+    </div>
+    <header id="home" class="contactHeaderContainer">
+        <div class="wrapper">
+            <!-- <div class="headerContainer"> -->
+            <div>
+                <nav class="nav">
+                    <label for="menu" class="menuToggle" aria-hidden="true">
+                        <div class="menuButton">
+                            <div class="menuButtonBurger"></div> 
+                        </div>
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </label>
+                    <input type="checkbox" id="menu" class="menu-checkbox">
+                    
+                    <ul class="headerNavContainer">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2>GET IN TOUCH</h2>
+            </div>
+        </div> <!-- END header wrapper --> 
+    </header>
+    <main class="contactMain" >
+        <div class="wrapper">
+            <div class="contactContainer">        
+                <div class="socialAddressContainer">
+                    <ul class="socialIcons">
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" ><i class="fab fa-facebook-f .faceIcon"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" ><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener" ><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.whatsapp.com/" target="_blank" rel="noopener" ><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                    <address>
+                        <a class="email" href="mailto:info@email.com">info@email.com</a><br>
+                        <a href="123-456-7890" >123 - 456 - 7890</a></br>
+                        123 Queen Street West, Unit 10</br>
+                        Toronto, Ontario</br>
+                        M5V2D5
+                    </address>
+                </div>
+                <div class="contactForm">
+                    <form action="">
+                        <fieldset>
+                            <label for="name" aria-hidden="true"></label>
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <label for="email" aria-hidden="true"></label>
+                            <input type="email" id="email" name="email" placeholder="Email address">
+                            <label for="message" aria-hidden="true"></label>
+                            <textarea name="message" id="message" name="message" placeholder="Message"  cols="30" rows="10"></textarea> 
+                            <button>SUBMIT</button>  
+                        </fieldset>                     
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Recreated at Juno © 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

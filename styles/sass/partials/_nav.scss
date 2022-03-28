@@ -1,0 +1,24 @@
+.nav label {
+    display: none;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .headerNavContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 5.4% 0 2.5% 0;
+        a { 
+            color: $white;
+            font-family: $headingFont;
+            margin-right: 34px;
+            font-size: 0.75rem;
+            letter-spacing: 0.04rem;
+            border-bottom: solid 2px transparent;
+            &:hover,
+            &:focus {
+                border-bottom: solid 2px $yellow;
+            }
+        }
+    }

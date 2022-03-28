@@ -1,0 +1,412 @@
+// modal window within body
+
+.orderButton {
+    margin: 0;
+    font-weight: 400px;
+    border-radius: 20% 0 20% 0;
+    z-index: 20;
+    position: fixed;
+    top: 0px;
+}
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.open {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+      z-index: 15;
+    }
+    &-bg {
+      position: absolute;
+      background: teal;
+      width: 80%;
+      height: 100%;
+    }
+    &-container {
+      border-radius: 10px;
+      background: #fff;
+      position: relative;
+      padding: 30px;
+    }
+    &-close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      outline: none;
+      appearance: none;
+      color: red;
+      background: none;
+      border: 0px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  
+// location
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 200px 0 100px -0.8%;
+    .location,
+    .blog,
+    .community,
+    .getInTouch 
+      {
+        width: 50%;
+        // min-width: 350px;
+        padding: 20px 24px 0 51px;
+        position: relative;
+      }
+        .locationIcon,
+        .communityIcon,
+        .blogIcon,
+        .getInTouchIcon {
+            background-color: $yellow;
+            height: 41px;
+            width: 41px;
+            border-radius: 50%;
+            position: absolute;
+            top: 19px;
+            left: -3px;
+                    }
+        .locationIcon i {
+                color: $black;
+                font-size: 1rem;
+                position: absolute;
+                top: 10px;
+                left: 12.5px;         
+            }
+        .communityIcon i {
+            color: $black;
+            font-size: 1rem;
+            position: absolute;
+            top: 9px;
+            left: 7px;         
+            }
+        .blogIcon i {
+            color: $black;
+            font-size: 1rem;
+            position: absolute;
+            top: 8.5px;
+            left: 12.5px;
+        }
+        .getInTouchIcon i {
+            color: $black;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 10.5px;
+            left: 10.5px;
+        }
+} 
+//  Try Something
+.trySomething {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $offBlack;
+    .leftText {
+        max-width: 50%;
+        min-width: 35%;
+        text-align: right; 
+        padding: 4% 3.85% 18px 0;
+        margin-right: 5%;
+        p {
+            margin-left: 62px;
+        }
+    }
+    .rightText {
+        max-width: 40%;
+        min-width: 35%;
+        text-align: left;
+        padding: 7% 0 0 0;
+        margin-left: 11.2%;
+        }
+ }
+
+.leftImg {
+    width: 42%;
+    position: relative;
+    top: -37px;
+    // z-index: 10;
+}
+
+.leftImg img {
+    box-shadow: 22px 23px 0px -8px $yellow;
+}
+
+.rightImg {
+ 
+    width: 42%;
+    position: relative;
+    right: -32px;
+    bottom: -20px;
+    margin-top: px;
+}
+
+.rightImg img {
+    box-shadow:  -22px 23px 0px -8px $yellow;
+    position: absolute;
+}
+
+button {
+    background-color: $yellow;
+    padding: 9px 10px 3px 10px;
+    &:hover,
+    &:focus {
+            cursor: pointer;
+            color: $yellow;
+            background-color: $black;
+        } 
+}
+
+// win a $100 //
+
+.winContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 131px 0 57px 0;
+   
+    h2 {
+        color: $yellow;
+    }
+    p {
+        padding: 0 87px;
+    }
+    .blackButton {
+        color: white;
+        background-color: $black;
+        font-size: 0.76rem;
+        padding: 8px 10px 3px 10px;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $black;
+            background-color: $yellow;
+        }
+    }
+}
+// Bringing //
+
+.bringing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 117px 0 86px 0;
+    h2 {
+        color: $yellow;
+        margin-bottom: 9px;
+    }
+    p {
+        max-width: 93%;
+        margin: 0 0 15px 0;
+    }
+    .blackButton {
+        color: white;
+        background-color: $black;
+        font-size: 0.76rem;
+        padding: 9px 15px 3px 15px;
+        margin: 0;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $black;
+            background-color: $yellow;
+        }
+    }
+    .bringingImg {
+        display:flex;
+        flex-direction: row;
+        min-width: 243px;
+        max-height: 243px;
+        margin: 0 86px 0 12px;
+    }
+}   .bringingImg img {
+    box-shadow: -14px 14px 0px 0px $yellow;
+}
+
+// gallery //
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $offBlack;
+    padding: 79px 127px;
+}
+
+.gallery div {
+    width: calc((100% / 3) - 20px);
+}
+
+//footer //
+
+footer {
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    p {
+        padding: 5px 0 8px 0;
+        margin: 0;
+    }
+}
+
+// Contact page /////////////////////////////////////////////////////
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 106px 0 275px 0;
+}
+    .socialAddressContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .socialIcons {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin: 0 20px -8px 0;
+            font-size: 1rem;
+        i {
+            color: $yellow;
+        }
+        }
+    }
+    address,
+    address a{
+        font-style: normal;
+        color: $white;
+        font-family: $bodyFont;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        letter-spacing: 1.3px;
+        width: 312px; 
+    }
+    a:first-child {
+        display: inline-block;
+        margin-bottom: 23px;
+    }
+
+// Blog page ////////////////////////////////////////////////////////
+
+.blogContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+    position: relative;
+    height: 2401px;
+    }
+
+.asideContainer {
+    max-width: 353px;
+    margin-top: 92px;
+    .asideImg {
+    box-shadow: 26px 7px 0 -6px $offBlack;
+    }
+    .featured {
+        background-color: $offBlack; 
+        margin-left: 71px;
+        padding: 30px 0px 25px 25px;
+        box-shadow: 20px 0px 0 0px $offBlack;
+        position: sticky;
+        top: 17px; 
+        a { color: $yellow;} 
+        h4 {
+            color: $yellow;
+            letter-spacing: 0.03rem;
+        }
+        p {margin: 5px 0 72px 0;}
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            font-size: 0.7rem;
+            line-height: 0.3rem;
+            letter-spacing: 1.3px; 
+            padding: 9px 0;
+            &::before {
+            content: '∙';
+            color: $white;
+            margin-right: 14px;
+            }
+        a {
+            color: $white;
+            margin: 0;
+        }
+        }
+
+    }
+}
+
+.employContainer {
+    max-width: 63.5%;
+    position: absolute;
+    top: -75px;
+    right: 0px;
+    .employImg {
+        padding-left: 19px;
+        img {
+            box-shadow: -32px 31px 0 -13px   $yellow;
+            width: 100%;
+        }
+    }
+    .employText {
+        border-left: solid 4.5px $yellow;
+        border-bottom: solid 4.5px $yellow;
+        padding: 74px 105px 99px 105px;
+        h3 {
+            color: $yellow;
+            font-size: 1rem;
+            font-size: 1.53rem;
+            letter-spacing: 0.05rem;
+            margin-bottom: 16px;
+        }
+        h5 {
+            margin-bottom: 31px;
+        }
+    }
+    .comments {
+        padding: 74px 105px 0px 105px;
+        .comment1,
+        .comment2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .comment1Img,
+            .comment2Img {
+                max-width: 12.45%;
+            }
+            .comment1Text,
+            .comment2Text {
+                max-width: calc(87.55% - 32px);
+                h5 {
+                    color: $yellow;
+                    margin: 0;
+                }
+                p {
+                    margin: 9px 0 95px 0;
+                }
+            }
+            .comment2Text p:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
