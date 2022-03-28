@@ -16,7 +16,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 3426px;
         .asideContainer {
             display: flex;
             flex-direction: column;
@@ -48,7 +47,6 @@
         .employContainer {
             max-width: 63.5%;
             position: static;
-            // top: -600px;
             .employText {
                 border: solid 4.5px $yellow;
                 h3 {
@@ -68,9 +66,6 @@
     }
 }
 
-.blogContainer {
-    height: 3485px;;
-}
 
 /* small laptops to desktops */
 @media (max-width: 1000px) {
@@ -114,7 +109,7 @@
 // ////////////////////////////////////
 @media (max-width: 960px) {
   
-        .trySomething {
+        .menuItems {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -239,7 +234,6 @@
         height: 100vh;
         background-size: cover;
         background-position: center;
-        // background-position-x: -500px;
         background-repeat: no-repeat;
         position: static;
     }
@@ -259,21 +253,16 @@
 
     nav .menuToggle {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;    
         margin-left: 95%;
         color: $white;
-        // text-align: right;
         font-size: 36px;
         padding-top: 20px;
-        // position: static;
-        // right: -37px;
     }
 
             .menuButton:hover,
             .menuButton:focus {
                 border: $yellow solid 2px;
-                // transition: border 0.5s ease-in-out;
             }
 
             .menuButton {
@@ -285,7 +274,7 @@
                 height: 41px;
                 cursor: pointer;
                 transition: all .5s ease-in-out;
-                background-color: white;
+                background-color: #E6EBF1;
                 border-radius: 50%;
                 z-index: 10;
             }
@@ -369,23 +358,10 @@
         margin: 0px;
     }
 
-    
-    // .headerNavContainer li {
-    //     position: relative;
-    //     right: -36px;
-    //     top: 10px;
-    // }
     .headerContainer { 
         h1 {
             margin-top: 100px;
         }
-        // .headerImg img {
-        //     width: 90%;
-        //     // border: $yellow solid 10px; 
-        //     position: relative;
-        //     left: -33px;
-        //     margin: 50px 0;
-        // }
     }
     .aboutContainer {
         margin: 50px 0 20px 0;

@@ -132,6 +132,7 @@
         }
         textarea {
             color: $white;
+            opacity: 1;
             background-color: $offBlack;
             height: 208px;
             width: 100%;
@@ -142,6 +143,7 @@
         }
         input::placeholder {
             color: $white;
+            opacity: 1;
             background-color: $offBlack;
             font-size: 0.7rem;
             line-height: 0.9rem;
@@ -150,6 +152,7 @@
         }
         textarea::placeholder  {
             color: $white;
+            opacity: 1;
             background-color: $offBlack;
             font-size: 0.7rem;
             line-height: 0.9rem;
@@ -210,16 +213,17 @@
         }
         textarea::placeholder  {
             color: $white;
+            opacity: 1;
             background-color: $green;
             font-size: 0.7rem;
             line-height: 0.9rem;
             letter-spacing: 1.3px;
         }
         input[type="text"] {
-            padding: 13px 43px 15px 15px;
+            padding: 13px 43px 15px 25px;
         }
         input[type="email"] {
-            padding: 13px 57px 15px 15px;
+            padding: 13px 57px 15px 25px;
         }
         input[type="text"] {
             margin-right: 38px;

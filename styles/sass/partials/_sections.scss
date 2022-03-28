@@ -1,4 +1,4 @@
-// modal window within body
+// modal window
 
 .orderButton {
     margin: 0;
@@ -7,6 +7,7 @@
     z-index: 20;
     position: fixed;
     top: 0px;
+    transition:  ease  .5s;
 }
 .modal {
     position: fixed;
@@ -62,10 +63,8 @@
     .location,
     .blog,
     .community,
-    .getInTouch 
-      {
+    .getInTouch {
         width: 50%;
-        // min-width: 350px;
         padding: 20px 24px 0 51px;
         position: relative;
       }
@@ -73,6 +72,9 @@
         .communityIcon,
         .blogIcon,
         .getInTouchIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $yellow;
             height: 41px;
             width: 41px;
@@ -84,34 +86,34 @@
         .locationIcon i {
                 color: $black;
                 font-size: 1rem;
-                position: absolute;
-                top: 10px;
-                left: 12.5px;         
+                // position: absolute;
+                // top: 10px;
+                // left: 12.5px;         
             }
         .communityIcon i {
             color: $black;
             font-size: 1rem;
-            position: absolute;
-            top: 9px;
-            left: 7px;         
+            // position: absolute;
+            // top: 9px;
+            // left: 7px;         
             }
         .blogIcon i {
             color: $black;
             font-size: 1rem;
-            position: absolute;
-            top: 8.5px;
-            left: 12.5px;
+            // position: absolute;
+            // top: 8.5px;
+            // left: 12.5px;
         }
         .getInTouchIcon i {
             color: $black;
             font-size: 0.9rem;
-            position: absolute;
-            top: 10.5px;
-            left: 10.5px;
+            // position: absolute;
+            // top: 10.5px;
+            // left: 10.5px;
         }
 } 
-//  Try Something
-.trySomething {
+//  Menu Items
+.menuItems {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -168,6 +170,7 @@ button {
             cursor: pointer;
             color: $yellow;
             background-color: $black;
+            transition:  ease  .5s;
         } 
 }
 
@@ -196,6 +199,7 @@ button {
             cursor: pointer;
             color: $black;
             background-color: $yellow;
+            transition:  ease  .5s;
         }
     }
 }
@@ -311,8 +315,7 @@ footer {
     max-width: 100%;
     justify-content: space-between;
     position: relative;
-    height: 2401px;
-    }
+}
 
 .asideContainer {
     max-width: 353px;
@@ -357,8 +360,8 @@ footer {
 
 .employContainer {
     max-width: 63.5%;
-    position: absolute;
-    top: -75px;
+    position: relative;
+    top: -78px;
     right: 0px;
     .employImg {
         padding-left: 19px;

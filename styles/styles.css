@@ -442,6 +442,7 @@ input[type=checkbox] {
   z-index: 20;
   position: fixed;
   top: 0px;
+  transition: ease 0.5s;
 }
 
 .modal {
@@ -508,6 +509,9 @@ input[type=checkbox] {
 .aboutContainer .communityIcon,
 .aboutContainer .blogIcon,
 .aboutContainer .getInTouchIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FFD300;
   height: 41px;
   width: 41px;
@@ -519,49 +523,37 @@ input[type=checkbox] {
 .aboutContainer .locationIcon i {
   color: #0F0F0F;
   font-size: 1rem;
-  position: absolute;
-  top: 10px;
-  left: 12.5px;
 }
 .aboutContainer .communityIcon i {
   color: #0F0F0F;
   font-size: 1rem;
-  position: absolute;
-  top: 9px;
-  left: 7px;
 }
 .aboutContainer .blogIcon i {
   color: #0F0F0F;
   font-size: 1rem;
-  position: absolute;
-  top: 8.5px;
-  left: 12.5px;
 }
 .aboutContainer .getInTouchIcon i {
   color: #0F0F0F;
   font-size: 0.9rem;
-  position: absolute;
-  top: 10.5px;
-  left: 10.5px;
 }
 
-.trySomething {
+.menuItems {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #171B0E;
 }
-.trySomething .leftText {
+.menuItems .leftText {
   max-width: 50%;
   min-width: 35%;
   text-align: right;
   padding: 4% 3.85% 18px 0;
   margin-right: 5%;
 }
-.trySomething .leftText p {
+.menuItems .leftText p {
   margin-left: 62px;
 }
-.trySomething .rightText {
+.menuItems .rightText {
   max-width: 40%;
   min-width: 35%;
   text-align: left;
@@ -600,6 +592,7 @@ button:hover, button:focus {
   cursor: pointer;
   color: #FFD300;
   background-color: #0F0F0F;
+  transition: ease 0.5s;
 }
 
 .winContainer {
@@ -625,6 +618,7 @@ button:hover, button:focus {
   cursor: pointer;
   color: #0F0F0F;
   background-color: #FFD300;
+  transition: ease 0.5s;
 }
 
 .bringing {
@@ -734,7 +728,6 @@ a:first-child {
   max-width: 100%;
   justify-content: space-between;
   position: relative;
-  height: 2401px;
 }
 
 .asideContainer {
@@ -784,8 +777,8 @@ a:first-child {
 
 .employContainer {
   max-width: 63.5%;
-  position: absolute;
-  top: -75px;
+  position: relative;
+  top: -78px;
   right: 0px;
 }
 .employContainer .employImg {
@@ -1017,6 +1010,7 @@ a:first-child {
 }
 .contactForm form fieldset textarea {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   height: 208px;
   width: 100%;
@@ -1026,6 +1020,7 @@ a:first-child {
 }
 .contactForm form fieldset input::-moz-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1034,6 +1029,7 @@ a:first-child {
 }
 .contactForm form fieldset input:-ms-input-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1042,6 +1038,7 @@ a:first-child {
 }
 .contactForm form fieldset input::placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1050,6 +1047,7 @@ a:first-child {
 }
 .contactForm form fieldset textarea::-moz-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1058,6 +1056,7 @@ a:first-child {
 }
 .contactForm form fieldset textarea:-ms-input-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1066,6 +1065,7 @@ a:first-child {
 }
 .contactForm form fieldset textarea::placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #171B0E;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1142,6 +1142,7 @@ a:first-child {
 }
 .employContainer form fieldset textarea::-moz-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #2B331B;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1149,6 +1150,7 @@ a:first-child {
 }
 .employContainer form fieldset textarea:-ms-input-placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #2B331B;
   font-size: 0.7rem;
   line-height: 0.9rem;
@@ -1156,16 +1158,17 @@ a:first-child {
 }
 .employContainer form fieldset textarea::placeholder {
   color: #FFFFFF;
+  opacity: 1;
   background-color: #2B331B;
   font-size: 0.7rem;
   line-height: 0.9rem;
   letter-spacing: 1.3px;
 }
 .employContainer form fieldset input[type=text] {
-  padding: 13px 43px 15px 15px;
+  padding: 13px 43px 15px 25px;
 }
 .employContainer form fieldset input[type=email] {
-  padding: 13px 57px 15px 15px;
+  padding: 13px 57px 15px 25px;
 }
 .employContainer form fieldset input[type=text] {
   margin-right: 38px;
@@ -1196,7 +1199,6 @@ a:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 3426px;
   }
   .blogContainer .asideContainer {
     display: flex;
@@ -1242,10 +1244,6 @@ a:first-child {
     width: 41%;
   }
 }
-.blogContainer {
-  height: 3485px;
-}
-
 /* small laptops to desktops */
 @media (max-width: 1000px) {
   .indexHeader .headerImg img {
@@ -1289,13 +1287,13 @@ a:first-child {
   }
 }
 @media (max-width: 960px) {
-  .trySomething {
+  .menuItems {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
   }
-  .trySomething .leftText {
+  .menuItems .leftText {
     order: 1;
     max-width: 100%;
     min-width: none;
@@ -1303,10 +1301,10 @@ a:first-child {
     margin: 10px auto;
     padding: 0;
   }
-  .trySomething .leftText p {
+  .menuItems .leftText p {
     margin-left: 0px;
   }
-  .trySomething .rightText {
+  .menuItems .rightText {
     max-width: 100%;
     min-width: none;
     text-align: center;
@@ -1452,7 +1450,7 @@ a:first-child {
     height: 41px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    background-color: white;
+    background-color: #E6EBF1;
     border-radius: 50%;
     z-index: 10;
   }
